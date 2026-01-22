@@ -1,0 +1,5 @@
+weather/.venv
+weather/weather.egg-info
+weather/weather/__pycache__
+
+

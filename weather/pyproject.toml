@@ -1,0 +1,19 @@
+[project]
+name = "weather"
+version = "0.1.0"
+description = "Weather MCP server"
+authors = [
+    { name = "Syed" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "mcp",
+    "httpx"
+]
+
+[project.scripts]
+weather = "weather.server:main"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"

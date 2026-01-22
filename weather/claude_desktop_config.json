@@ -1,0 +1,20 @@
+{
+  "mcpServers": {
+    "stock-price-mcp": {
+      "command": "stock-price-mcp",
+      "transport": "stdio",
+      "env": {
+        "STOCK_MCP_API_KEY": "your_stock_api_key_here"
+      }
+    },
+    "weather": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "C:\\mcp\\FirstMCPServer\\weather",
+        "run",
+        "weather"
+      ]
+    }
+  }
+}

@@ -3,6 +3,7 @@ You can use any client, but we tested it with Claude Desktop
 You will need to update the Claue Desktop config file which is avaiable in the source as well
 When you pull the source code, you would need to create an environment using UV, so UV is a prereq for it
 Run the commands as follows form you IDE Terminal or root directory
+  -> set WEATHER_API_KEY="PLACE YOUR API KEY"
   -> uv run weather
   -> uv pip install -e . --force-reinstall
   -> uv run weather # again to ensure weather is running

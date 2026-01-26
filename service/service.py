@@ -5,6 +5,9 @@ API_KEY = 'eb2872a46709af57eff58bf31118cff7'
 class WeatherAPIService:
 
     async def get_weather(self, city: str) -> str:
+
+        # return f"{"Houston"}: {10}°C, {"Very cold"}"
+
         """Return current weather for a city using OpenWeatherMap."""
         if not API_KEY:
             return "Missing WEATHER_API_KEY"

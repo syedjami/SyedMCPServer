@@ -12,8 +12,8 @@ dependencies = [
 ]
 
 [project.scripts]
-weather = "weather.server:main"
+weather = "weather.weather.server:run"
 
-[build-system]
-requires = ["setuptools"]
-build-backend = "setuptools.build_meta"
+[tool.setuptools.packages.find]
+where = ["."]
+

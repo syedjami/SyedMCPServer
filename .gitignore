@@ -1,5 +1,7 @@
-weather/.venv
+uv.lock
+.venv
 weather/weather.egg-info
 weather/weather/__pycache__
+service/__pycache__
 
 

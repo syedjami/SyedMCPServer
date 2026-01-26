@@ -1,6 +1,4 @@
 from mcp.server.fastmcp import FastMCP
-import httpx
-import os
 
 from service import WeatherAPIService
 

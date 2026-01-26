@@ -1,2 +1,2 @@
 [console_scripts]
-weather = weather.weather.server:run
+weather = weather.server:run

@@ -1,5 +1,4 @@
 import httpx
-import os
 
 API_KEY = 'eb2872a46709af57eff58bf31118cff7'
 

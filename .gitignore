@@ -3,5 +3,6 @@ uv.lock
 weather/weather.egg-info
 weather/weather/__pycache__
 service/__pycache__
+weather.egg-info
 
 

@@ -12,7 +12,7 @@ dependencies = [
 ]
 
 [project.scripts]
-weather = "weather.weather.server:run"
+weather = "weather.server:run"
 
 [tool.setuptools.packages.find]
 where = ["."]

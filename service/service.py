@@ -1,6 +1,7 @@
+import os
 import httpx
 
-API_KEY = 'eb2872a46709af57eff58bf31118cff7'
+API_KEY = os.getenv("WEATHER_API_KEY")
 
 class WeatherAPIService:
 

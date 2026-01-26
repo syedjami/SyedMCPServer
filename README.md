@@ -7,4 +7,4 @@ Run the commands as follows form you IDE Terminal or root directory
   -> uv pip install -e . --force-reinstall
   -> uv run weather # again to ensure weather is running
 Once service is running, kill the weather service and Claude Desktop from Task Manager
-Restart Claude Desktop and try asking it "Housto, TX Weather"
+Restart Claude Desktop and try asking it "Houston, TX Weather"

@@ -1,11 +1,9 @@
-import os
 from mcp.server.fastmcp import FastMCP
 
 from service import WeatherAPIService
 
 mcp = FastMCP("weather")
 
-API_KEY = os.getenv("WEATHER_API_KEY")
 
 @mcp.tool()
 async def get_weather(city: str) -> str:

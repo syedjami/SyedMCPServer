@@ -1,17 +1,15 @@
 import os
 import httpx
 
-API_KEY = os.getenv("WEATHER_API_KEY")
+API_KEY = os.getenv("WEATHER_API_KEY") # it is picked from the client config file, not the OS environment
 
 class WeatherAPIService:
 
     async def get_weather(self, city: str) -> str:
 
-        # return f"{"Houston"}: {10}°C, {"Very cold"}"
-
         """Return current weather for a city using OpenWeatherMap."""
         if not API_KEY:
-            return "Missing WEATHER_API_KEY"
+            return "Missing WEATHER_API_KEY in Client Config"
 
         url = (
             "https://api.openweathermap.org/data/2.5/weather"

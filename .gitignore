@@ -1,8 +1,9 @@
 uv.lock
 .venv
-weather/weather.egg-info
-weather/weather/__pycache__
-service/__pycache__
+MCP_Server.egg-info
+mcp_server\__pycache__
+stock_service\__pycache__
+weather_service\__pycache__
 weather.egg-info
 WEATHER_API_KEY.txt
 

@@ -6,3 +6,4 @@ Author: Syed
 Requires-Python: >=3.10
 Requires-Dist: mcp
 Requires-Dist: httpx
+Requires-Dist: yfinance

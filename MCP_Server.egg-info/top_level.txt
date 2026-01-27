@@ -1,2 +1,3 @@
 mcp_server
+stock_service
 weather_service

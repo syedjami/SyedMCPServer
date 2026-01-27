@@ -8,5 +8,7 @@ MCP_Server.egg-info/requires.txt
 MCP_Server.egg-info/top_level.txt
 mcp_server/__init__.py
 mcp_server/mcp_server.py
+stock_service/__init__.py
+stock_service/stock_service.py
 weather_service/__init__.py
 weather_service/weather_service.py

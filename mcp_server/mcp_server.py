@@ -5,7 +5,7 @@ from weather_service import WeatherAPIService
 
 mcp = FastMCP("mcp_server")
 
-
+# Weather Tool
 @mcp.tool()
 async def get_weather(city: str) -> str:
     
@@ -16,6 +16,15 @@ async def get_weather(city: str) -> str:
     """Return current weather for a city using OpenWeatherMap."""
     ws = WeatherAPIService()
     return await ws.get_weather(city)
+
+
+# Stock Tool
+from stock_service import StockAPIService
+@mcp.tool()
+def get_stock_info(symbol: str) -> str:
+    """Return the latest price, open price, and previous close for a stock symbol."""
+    ss = StockAPIService()
+    return ss.get_stock_info(symbol)
 
 def run():
     mcp.run(transport="stdio")

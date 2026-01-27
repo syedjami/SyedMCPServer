@@ -1,5 +1,5 @@
 [project]
-name = "weather"
+name = "MCP_Server"
 version = "0.1.0"
 description = "Weather MCP server"
 authors = [
@@ -12,7 +12,7 @@ dependencies = [
 ]
 
 [project.scripts]
-weather = "weather.server:run"
+mcp_server = "mcp_server.mcp_server:run"
 
 [tool.setuptools.packages.find]
 where = ["."]

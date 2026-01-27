@@ -1,9 +1,9 @@
 import os
 from mcp.server.fastmcp import FastMCP
 
-from service import WeatherAPIService
+from weather_service import WeatherAPIService
 
-mcp = FastMCP("weather")
+mcp = FastMCP("mcp_server")
 
 
 @mcp.tool()

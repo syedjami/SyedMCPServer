@@ -1,16 +1,16 @@
 {
   "mcpServers": {
-    "weather": {
+    "mcp_server": {
       "command": "uv",
       "args": [
         "--directory",
-        "C:\\mcp\\FirstMCPServer",
+        "C:\\mcp\\SyedMCPServer",
         "run",
-        "weather"
+        "mcp_server"
       ],
-      "env": {
-      "WEATHER_API_KEY": "YOUR_API_KEY_HERE"
-      }
+     "env": {
+      "WEATHER_API_KEY": "your_api_key_here"
+    }
     }
   }
 }

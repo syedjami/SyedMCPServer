@@ -3,6 +3,8 @@ from mcp.server.fastmcp import FastMCP
 
 from weather_service import WeatherAPIService
 
+from models.stock_data import StockPriceData
+
 mcp = FastMCP("mcp_server")
 
 # Weather Tool
@@ -21,7 +23,7 @@ async def get_weather(city: str) -> str:
 # Stock Tool
 from stock_service import StockAPIService
 @mcp.tool()
-def get_stock_info(symbol: str) -> str:
+def get_stock_info(symbol: str) -> dict:
     """Return the latest price, open price, and previous close for a stock symbol."""
     ss = StockAPIService()
     return ss.get_stock_info(symbol)

@@ -1,4 +1,5 @@
 import os
+import sys
 from mcp.server.fastmcp import FastMCP
 
 from weather_service import WeatherAPIService

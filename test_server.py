@@ -31,7 +31,8 @@ async def test_get_weather():
     """Test weather lookup for a city"""
     # Set the API key in environment for subprocess
     env = os.environ.copy()
-    env["WEATHER_API_KEY"] = "your_api_key_here"
+    # x = env["WEATHER_API_KEY"]
+    # env["WEATHER_API_KEY"] = "your_api_key_here"
     
     server_params = StdioServerParameters(
         command="python",

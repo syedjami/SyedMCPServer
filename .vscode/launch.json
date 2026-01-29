@@ -1,0 +1,32 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug MCP Server",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/mcp_server/mcp_server.py",
+            "console": "integratedTerminal",
+            "justMyCode": false
+        }
+        ,
+        {
+            "name": "Debug pytest (current file)",
+            "type": "python",
+            "request": "launch",
+            "module": "pytest",
+            "args": [
+                "${file}",
+                "-v",
+                "-s"
+            ],
+            "cwd": "${workspaceFolder}",
+            "justMyCode": false,
+            "console": "integratedTerminal",
+            "env": {
+                "PYTHONUNBUFFERED": "1"
+            }
+        }
+    ]
+}
+

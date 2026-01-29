@@ -30,3 +30,6 @@ def get_stock_info(symbol: str) -> dict:
 
 def run():
     mcp.run(transport="stdio")
+
+if __name__ == "__main__":
+    run()

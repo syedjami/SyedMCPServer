@@ -7,3 +7,6 @@ Requires-Python: >=3.10
 Requires-Dist: mcp
 Requires-Dist: httpx
 Requires-Dist: yfinance
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-asyncio; extra == "dev"

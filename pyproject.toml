@@ -12,6 +12,12 @@ dependencies = [
     "yfinance"
 ]
 
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-asyncio"
+]
+
 [project.scripts]
 mcp_server = "mcp_server.mcp_server:run"
 

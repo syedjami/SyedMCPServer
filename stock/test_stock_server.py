@@ -9,10 +9,12 @@ async def test_stock_server_initialization():
     """Test server starts and initializes correctly"""
 
     env = os.environ.copy()
-    env["PYTHONPATH"] = os.getcwd()
+    # Get the directory of this test file to set proper PYTHONPATH
+    test_dir = os.path.dirname(os.path.abspath(__file__))
+    env["PYTHONPATH"] = test_dir
     server_params = StdioServerParameters(
         command="python",
-        args=["-m", "stock.mcp_server.mcp_server"],
+        args=["-m", "mcp_server.mcp_server"],
         env=env,
     )
     
@@ -30,10 +32,12 @@ async def test_stock_server_get_stock_info():
     """Test stock info lookup for a company stock symbol"""
 
     env = os.environ.copy()
-    env["PYTHONPATH"] = os.getcwd()
+    # Get the directory of this test file to set proper PYTHONPATH
+    test_dir = os.path.dirname(os.path.abspath(__file__))
+    env["PYTHONPATH"] = test_dir
     server_params = StdioServerParameters(
         command="python",
-        args=["-m", "stock.mcp_server.mcp_server"],
+        args=["-m", "mcp_server.mcp_server"],
         env=env,
     )
     
@@ -41,7 +45,7 @@ async def test_stock_server_get_stock_info():
         async with ClientSession(read, write) as session:
             await session.initialize()
             
-            # Call weather tool
+            # Call stock tool
             result = await session.call_tool(
                 "get_stock_info",
                 arguments={"symbol": "AAPL"}

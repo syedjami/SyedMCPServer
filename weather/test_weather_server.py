@@ -11,7 +11,9 @@ async def test_weather_server_initialization():
     env = os.environ.copy()
     env["WEATHER_API_KEY"] = "your_api_key_here"
     # Ensure subprocess can import project packages
-    env["PYTHONPATH"] = os.getcwd()
+    # Get the directory of this test file to set proper PYTHONPATH
+    test_dir = os.path.dirname(os.path.abspath(__file__))
+    env["PYTHONPATH"] = test_dir
     
     server_params = StdioServerParameters(
         command="python",
@@ -36,7 +38,9 @@ async def test_get_weather():
     # x = env["WEATHER_API_KEY"]
     # env["WEATHER_API_KEY"] = "your_api_key_here"
     # Ensure subprocess can import project packages
-    env["PYTHONPATH"] = os.getcwd()
+    # Get the directory of this test file to set proper PYTHONPATH
+    test_dir = os.path.dirname(os.path.abspath(__file__))
+    env["PYTHONPATH"] = test_dir
     
     server_params = StdioServerParameters(
         command="python",

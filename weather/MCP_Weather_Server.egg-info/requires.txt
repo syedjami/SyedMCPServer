@@ -1,0 +1,7 @@
+mcp
+httpx
+yfinance
+
+[dev]
+pytest
+pytest-asyncio

@@ -1,0 +1,26 @@
+[project]
+name = "MCP_Stock_Server"
+version = "0.1.0"
+description = "MCP Stock Server"
+authors = [
+    { name = "Syed" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "mcp",
+    "httpx",
+    "yfinance"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-asyncio"
+]
+
+[project.scripts]
+mcp_stock_server = "mcp_server.mcp_server:run"
+
+[tool.setuptools.packages.find]
+where = ["."]
+

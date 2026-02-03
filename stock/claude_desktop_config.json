@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "mcp_server": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "C:\\mcp\\SyedMCPServer\\stock",
+        "run",
+        "mcp_stock_server"
+      ]
+    }
+  }
+}

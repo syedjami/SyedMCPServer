@@ -1,10 +1,47 @@
-uv.lock
-.venv
-MCP_Server.egg-info
-mcp_server\__pycache__
-stock_service\__pycache__
-weather_service\__pycache__
-weather.egg-info
+# Ignore API key files
 WEATHER_API_KEY.txt
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# VS Code
+.vscode/
+
+# MyPy
+.mypy_cache/
+
+# Pyre
+.pyre/
+
+# Ruff
+.ruff_cache/
 
 

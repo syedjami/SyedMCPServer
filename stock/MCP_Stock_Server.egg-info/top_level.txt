@@ -1,3 +1,0 @@
-mcp_server
-models
-stock_service

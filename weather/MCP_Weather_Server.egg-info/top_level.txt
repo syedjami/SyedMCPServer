@@ -1,4 +1,0 @@
-mcp_server
-models
-stock_service
-weather_service

@@ -1,20 +1,37 @@
 # Ignore API key files
 WEATHER_API_KEY.txt
 
+# Ignore lock files
+uv.lock
+stock/uv.lock
+weather/uv.lock
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
+stock/__pycache__/
+stock/.pytest_cache/
+stock/mcp_server/__pycache__/
+stock/models/__pycache__/
+weather/__pycache__/
+weather/.pytest_cache/
+weather/mcp_server/__pycache__/
+weather/weather_service/__pycache__/
 
-# Virtual environments
+
+# Virtual environments...
 .venv/
 venv/
 env/
+stock/.venv/
 
 # Distribution / packaging
 build/
 dist/
 *.egg-info/
+stock/MCP_Stock_Server.egg-info/
+weather/MCP_Weather_Server.egg-info/
 
 # Installer logs
 pip-log.txt
